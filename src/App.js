@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import {useState} from "react";
+import Advice from "./Advice";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+
+    const [advice, setAdvice] = useState(null);
+    const [id, setID] = useState(null);
+
+    function getAdvice(){
+        fetch(`https://api.adviceslip.com/advice`)
+        .then((response)=>{
+            if(!response.ok){
+                throw new Error(
+                    `This is an HTTP error: The status is ${response.status}`
+                );
+            }
+            return response.json();
+        })
+        .then((actualData)=>{
+            setAdvice(actualData.slip.advice);
+            setID(actualData.slip.id);
+            })
+        .catch((error)=>console.log(error.message));
+    }
+
+    getAdvice();
+
+    return(
+    <div>
+        <h3><Advice id={id} advice={advice}/></h3>
+        <button onClick={getAdvice}>Button</button>
     </div>
-  );
+    );
 }
 
 export default App;
