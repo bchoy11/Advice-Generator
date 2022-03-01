@@ -21,7 +21,14 @@ function Advice(props){
     //     .catch((error)=>console.log(error.message));
     // },[]);
 
-    return <div className="App">{"#"+props.id+": "+props.advice}</div>;
+    return <div>
+        <div className="advice-id">
+            {"Advice #"+props.id}
+        </div>
+        <div className="advice">
+            {"\""+props.advice+"\""}
+        </div>
+    </div>;
 }
 
 export default Advice;

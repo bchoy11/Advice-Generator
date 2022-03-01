@@ -26,9 +26,9 @@ function App(){
     getAdvice();
 
     return(
-    <div>
+    <div className="advice-container">
         <h3><Advice id={id} advice={advice}/></h3>
-        <button onClick={getAdvice}>Button</button>
+        <button className="refresh-button" onClick={getAdvice}><span>Button</span></button>
     </div>
     );
 }
