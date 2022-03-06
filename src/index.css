@@ -4,12 +4,19 @@
     font-family: 'Barlow';
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
-    background-color: hsl(217, 19%, 24%);
+    background-color: hsl(220, 22.5%, 15.7%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .advice-container{
-    background-color: hsl(217, 19%, 38%);
+    background-color: hsl(217, 19%, 24%);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -18,7 +25,8 @@ body{
     width: 50%;
     margin: auto;
     min-width: 21.85rem;
-    max-width: 25rem;
+    max-width: 32rem;
+    position: relative;
 }
 
 .advice-id{
@@ -31,10 +39,20 @@ body{
     font-size: 28px;
     color: hsl(193, 38%, 86%);
     margin: 1rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+}
+
+.mobile-divider{
+    margin-bottom: 4rem;
+}
+
+.desktop-divider{
+    margin-bottom: 4rem;
+    display: none;
 }
 
 button {
-    background-image: url(/images/icon-dice.svg);
+    background-image: url(./images/icon-dice.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     height: 50px;
@@ -42,8 +60,19 @@ button {
     border-radius: 50%;
     background-color:hsl(150, 100%, 66%);
     border: none;
+    position: absolute;
+    bottom: -25px;
 }
 
 button span {
   display: none;
+}
+
+@media(min-width: 56.25rem){
+    .mobile-divider{
+        display: none;
+    }
+    .desktop-divider{
+        display: block;
+    }
 }

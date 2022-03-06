@@ -1,5 +1,7 @@
 import {useState} from "react";
 import Advice from "./Advice";
+import mobileDividerImg from "./images/pattern-divider-mobile.svg";
+import desktopDividerImg from "./images/pattern-divider-desktop.svg";
 
 function App(){
 
@@ -28,6 +30,9 @@ function App(){
     return(
     <div className="advice-container">
         <h3><Advice id={id} advice={advice}/></h3>
+        <img src={mobileDividerImg} alt="divider" className="mobile-divider"/>
+        <img src={desktopDividerImg} alt='divider' className="desktop-divider"/>
+        {/* <img src={/image/pattern-divider-mobile.svg}></img> */}
         <button className="refresh-button" onClick={getAdvice}><span>Button</span></button>
     </div>
     );
