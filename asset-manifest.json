@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/bchoy11.github.io/FEM-advice-generator/static/css/main.5438f5d2.css",
-    "main.js": "/bchoy11.github.io/FEM-advice-generator/static/js/main.801af1b7.js",
-    "static/js/787.fc7a31c1.chunk.js": "/bchoy11.github.io/FEM-advice-generator/static/js/787.fc7a31c1.chunk.js",
-    "index.html": "/bchoy11.github.io/FEM-advice-generator/index.html",
-    "static/media/icon-dice.svg": "/bchoy11.github.io/FEM-advice-generator/static/media/icon-dice.08691e4c24c11b5ba564.svg",
-    "static/media/pattern-divider-desktop.svg": "/bchoy11.github.io/FEM-advice-generator/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
-    "static/media/pattern-divider-mobile.svg": "/bchoy11.github.io/FEM-advice-generator/static/media/pattern-divider-mobile.aca38726412164df099c43d4f2fed72e.svg",
-    "main.5438f5d2.css.map": "/bchoy11.github.io/FEM-advice-generator/static/css/main.5438f5d2.css.map",
-    "main.801af1b7.js.map": "/bchoy11.github.io/FEM-advice-generator/static/js/main.801af1b7.js.map",
-    "787.fc7a31c1.chunk.js.map": "/bchoy11.github.io/FEM-advice-generator/static/js/787.fc7a31c1.chunk.js.map"
+    "main.css": "/FEM-advice-generator/static/css/main.87632104.css",
+    "main.js": "/FEM-advice-generator/static/js/main.f165936c.js",
+    "static/js/787.fc7a31c1.chunk.js": "/FEM-advice-generator/static/js/787.fc7a31c1.chunk.js",
+    "index.html": "/FEM-advice-generator/index.html",
+    "static/media/icon-dice.svg": "/FEM-advice-generator/static/media/icon-dice.08691e4c24c11b5ba564.svg",
+    "static/media/pattern-divider-desktop.svg": "/FEM-advice-generator/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
+    "static/media/pattern-divider-mobile.svg": "/FEM-advice-generator/static/media/pattern-divider-mobile.aca38726412164df099c43d4f2fed72e.svg",
+    "main.87632104.css.map": "/FEM-advice-generator/static/css/main.87632104.css.map",
+    "main.f165936c.js.map": "/FEM-advice-generator/static/js/main.f165936c.js.map",
+    "787.fc7a31c1.chunk.js.map": "/FEM-advice-generator/static/js/787.fc7a31c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5438f5d2.css",
-    "static/js/main.801af1b7.js"
+    "static/css/main.87632104.css",
+    "static/js/main.f165936c.js"
   ]
 }
